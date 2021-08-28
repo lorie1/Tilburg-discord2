@@ -40,7 +40,7 @@ bot.on("guildMemberAdd", member => {
 
     if ( !role) return;
 
-    member.addRole(role);
+    member.addRole(role); 
 });
 
 
