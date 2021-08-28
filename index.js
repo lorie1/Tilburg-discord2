@@ -34,11 +34,6 @@ fs.readdir("./commands/", (err, files) => {
 
 });
 
-Client.on(`guildMemberAdd`, guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === `member`);
-
-    guildMember.roles.add(welcomeRole);
-});
 
 
 bot.login(botConfig.token);

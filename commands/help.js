@@ -32,7 +32,7 @@ module.exports.run = async (client, message, args) => {
 
     var response = "**Bot commands Tilburg**\n\n";
     var general = "**__Algemenen Commands__**\n\n !help: U krijgt alle informatie te ziet wat alle commands doen en welke er zijn. \n\n !serverinfo u krijgt een klein onderdeel te zien van onze server zoalsoe veel leden wij hebben, hoe onze server heet en wanner u pns bent gejoint.\n\n";
-    var info = "\n**__Informatie__**\n\n Deze Bot is nog in de maak, hij is wel 24/7 online!";
+    var info = "\n**__Informatie__**\n\n Deze Bot is nog in de maak, hij is dus ook niet 24/7 online. Let hier op!";
 
     for (let i = 0; i < commandList.length; i++) {
         const command = commandList[i];
