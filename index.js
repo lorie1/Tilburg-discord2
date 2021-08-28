@@ -34,7 +34,7 @@ fs.readdir("./commands/", (err, files) => {
 
 });
 
-bot.on("GuildMemberAdd", member => {
+bot.on("guildMemberAdd", member => {
 
     var role = member.guild.roles.cache.get(`879420297571340399`);
 
