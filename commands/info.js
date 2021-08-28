@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
             .setColor("#00f518")
             .addField("Bot naam", client.user.username);
 
-            message.channel.send("Alle infotmatie staat in je privé berichten! :mailbox_with_mail:")
+            message.channel.send("Alle infotmatie staat in je privé berichten! :mailbox_with_mail:") 
             return message.author.send(botEmbed);
 }      
 
