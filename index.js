@@ -34,9 +34,24 @@ fs.readdir("./commands/", (err, files) => {
 
 });
 
+bot.on("guildMemberAdd", member => {
+
+    var role = member.guild.roles.find("name", "Burger");
+
+    if ( !role) return;
+
+    member.addRole(role);
+});
 
 
-bot.login(botConfig.token);
+
+
+
+
+
+
+
+
 
 bot.on("ready", async () => {
 
