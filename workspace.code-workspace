@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Tilburg bot 2.0"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Tilburg bot 2.0\\Tilburg bot\\node_modules"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Tilburg bot 2.0\\Tilburg bot\\commands"
+		}
+	],
+	"settings": {}
+}
