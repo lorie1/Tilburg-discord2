@@ -34,20 +34,23 @@ fs.readdir("./commands/", (err, files) => {
 
 });
 
-bot.on("guildMemberAdd", member => {
+Client.on("GuildMemberAdd", member => {
 
-    var role = member.guild.roles.find("name", "Burger");
+    var role = member.guild.roles.cache.get(`879420297571340399`);
 
-    if ( !role) return;
+    if(!role) return;
 
-    member.addRole(role);  
+    member.roles.add(role);
 
-    const channel = member.guild.channels.find("name", "welkom");
+    var channel = member.guild.channels.cache.get(`881267033109585921`);
 
-    if ( !channel) return;
+    if(!channel) return;
 
     channel.send(`Welkom in de server ${member}`);
-});
+
+
+
+})
 
 
 
