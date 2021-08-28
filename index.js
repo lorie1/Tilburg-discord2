@@ -46,7 +46,13 @@ bot.on("guildMemberAdd", member => {
 
     if(!channel) return;
 
-    channel.send(`Welkom in de server ${member} kijk even #regels en doe even !help in #bot-commands!`);
+    var serverEmbed = new discord.MessageEmbed()
+            .setDescription(`welkom ${member}`)
+            .setColor("#kleur")
+            .addField("Totaal memebers", message.guild.memberCount);
+
+    
+    channel.send(serverEmbed);
 
 
 
