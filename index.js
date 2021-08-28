@@ -41,6 +41,12 @@ bot.on("guildMemberAdd", member => {
     if ( !role) return;
 
     member.addRole(role);  
+
+    const channel = member.guild.channels.find("name", "welkom")
+
+    if ( !channel) return;
+
+    channel.send(`Welkom in de server ${member}`);
 });
 
 
