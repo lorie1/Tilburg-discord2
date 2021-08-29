@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     const categoryID = "880254056524836925";
 
-    if (!message.member.role("staff team")) return message.reply("Jij kan dit niet doen");
+    if (message.member.role(`881316715307339806`)) return message.reply("Jij kan dit niet doen");
 
     if (message.channel.parentID == categoryID) {
 
