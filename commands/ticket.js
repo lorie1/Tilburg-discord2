@@ -50,6 +50,17 @@ module.exports.run = async (client, message, args) => {
                         READ_MESSAGE_HISTORY: true
                     });
 
+                    settedParent.updateOverwrite(message.guild.roles.cache.find(x => x.name === 'staff team'), {
+                        CREATE_INSTANT_INVITE: false,
+                        READ_MESSAGES: true,
+                        SEND_MESSAGES: true,
+                        ATTACH_FILES: true,
+                        CONNECT: true,
+                        ADD_REACTIONS: true,
+                        VIEW_CHANNEL: true,
+                        READ_MESSAGE_HISTORY: true
+                    });
+
                     var embedParent = new discord.MessageEmbed()
                         .setTitle(`Goedendag ${message.author.username}`)
                         .setDescription("Zet hier uw vraag/klacht.\n\n Het staff team zal u komen helpen, wij vragen u niet te taggen!")
