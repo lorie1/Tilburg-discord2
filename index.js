@@ -47,7 +47,7 @@ bot.on("guildMemberAdd", member => {
     if(!channel) return;
 
     
-    channel.send(`Welkom in de server ${member} kijk even regels en doe even !help in bot-commands! ${memberCount}`);
+    channel.send(`Welkom in de server ${member} kijk even regels en doe even !help in bot-commands! ${message.guild.memberCount}`);
 
 
 
