@@ -39,7 +39,7 @@ module.exports.run = async (client, message, args) => {
         .setDescription(`Bericht van ${message.author} \n\n ${options.titel} \n ${options.bericht}`)
         .setTimestamp();
 
-    var channel = message.member.guild.channels.cache.find(channels => channels.name === options.kanaal);
+    var channel = message.guild.channels.cache.find(channels => channels.name === options.kanaal);
     if (!channel) return message.reply("Dit kanaal bestaat niet");
 
     channel.send(announceEmbed);
