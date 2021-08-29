@@ -31,7 +31,7 @@ module.exports.run = async (client, message, args) => {
     });
 
     var response = "**Bot commands Tilburg**\n\n";
-    var general = "**__Algemenen Commands__**\n\n !help: U krijgt alle informatie te ziet wat alle commands doen en welke er zijn. \n\n !serverinfo: u krijgt een klein onderdeel te zien van onze server zoals hoeveel leden wij hebben, hoe onze server heet en wanneer u bent gejoint.\n\n!new: maakt een nieuwe ticket aan.\n\n!sps <steen><papier><schaar>: \n\n!ping: hoeveel ping je momenteel heb\n\n**_staff commands_**\n\n!close: sluit ticket\n\nclear <aantal>: verweiderd het aantal opgegeven berichten.";
+    var general = "**__Algemenen Commands__**\n\n!help: U krijgt alle informatie te zien en wat alle commands doen en welke er zijn.\n\n!serverinfo: u krijgt een klein onderdeel te zien van onze server zoals hoeveel leden wij hebben, hoe onze server heet en wanneer u bent gejoint.\n\n!new: maakt een nieuwe ticket aan.\n\n!sps <steen><papier><schaar>: is steen papier schaar\n\n!ping: hoeveel ping je momenteel heb\n\n**_staff commands_**\n\n!close: sluit ticket\n\n!clear <aantal>: verweiderd het aantal opgegeven berichten.\n\n!Claim: hier mee kan een staff lid een ticket claimen, als die dat doet betekend het dat degenen die !claim heeft gedaan u gaat helpen!";
     var info = "\n**__Informatie__**\n\n Deze Bot is nog in de maak, hij is al wel 24/7 online, dus hij kan al gebruikt worden!";
 
     for (let i = 0; i < commandList.length; i++) {
