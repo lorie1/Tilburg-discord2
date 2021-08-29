@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     var serverEmbed = new discord.MessageEmbed()
             .setTitle("Sollicitaties")
-            .setDescription("Politie: gesloten\n\nBrandweer: open\n\nAmbulance: open\n\nnormaal staff: open\n\n**_dit is voor leidinggevende de normale HR Sollicitaties zijn gesloten maar de Leidinggevende Sollicitaties staan open, dat ziet u hier boven._**")
+            .setDescription("Politie: gesloten\n\nBrandweer: gesloten\n\nAmbulance: gesloten\n\nnormaal staff: gesloten\n\nDeveloper: gesloten\n\n\n**_Alle sollicitatsies zijn gesloten_**")
             .setColor("#kleur")
 
         return message.channel.send(serverEmbed);
