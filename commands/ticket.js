@@ -67,6 +67,8 @@ module.exports.run = async (client, message, args) => {
                         .setFooter("Ticket");
                     settedParent.send(embedParent);
 
+                    message.channel.send(`@staff team ${message.author.userDiscriminator}`).then(msg => msg.delete({ timeout: 1000 }));
+
                 }
             ).catch(err => {
                 message.channel.send("Er is iets misgelopen probeer het later nog eens.");
