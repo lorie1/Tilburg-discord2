@@ -10,8 +10,8 @@ module.exports.run = async (client, message, args) => {
 
     var embed = new discord.MessageEmbed()
         .setDescription(argsBericht)
-        .setAuthor(`${message.author.tag}`)
-        .setColor("#ffcc00");
+        .setColor("#ffcc00")
+        .setAuthor(`${message.author.tag}`);
         
 
 
