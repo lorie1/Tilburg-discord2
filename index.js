@@ -67,7 +67,7 @@ bot.on("ready", async () => {
 
     console.log(`${bot.user.username} is online.`);
 
-    bot.user.setActivity("Tilburg", { type: "PLAYING" });
+    bot.user.setActivity(`Lorie#1093`, { type: `LISTENING` });
 
 });
 

@@ -22,7 +22,7 @@ module.exports.run = async (client, message, args) => {
 
     } else {
 
-        message.channel.send("Gelieve dit command te doen bij een ticket.");
+        message.channel.send("Gelieve dit commando te doen in een ticket.");
 
     }
 
