@@ -9,8 +9,8 @@ module.exports.run = async (client, message, args) => {
     if (message.channel.parentID == categoryID) {
 
         var serverEmbed = new discord.MessageEmbed()
-            .setTitle(`Afronding ${channelName}`)
-            .setDescription(`Kunnen wij ${channelName} sluiten of heeft u nog vragen/klachten?`)
+            .setTitle(`Afronding ${message.channel.name}`)
+            .setDescription(`Kunnen wij ${message.channel.name} sluiten of heeft u nog vragen/klachten?`)
             .setColor("#0b03fc")
             .setTimestamp();
 
