@@ -28,7 +28,7 @@ module.exports.run = async (client, message, args) => {
  var serverEmbed = new discord.MessageEmbed()
     .setDescription("Uw bug is verstuurd in #bug")
     .setColor("#0b03fc")
-    .setAuthor(`${message.author.tag}`)
+    .setAuthor(`${author.tag}`)
     .setTimestamp();
 
 return message.channel.send(serverEmbed);
