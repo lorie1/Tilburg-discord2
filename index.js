@@ -52,11 +52,15 @@ bot.on("guildMemberAdd", member => {
     .setColor("#0b03fc")
     .setTimestamp();
 
-return message.channel.send(serverEmbed);
+return channel.send(serverEmbed);
 
 
 
 })
+
+
+
+
 
 
 
