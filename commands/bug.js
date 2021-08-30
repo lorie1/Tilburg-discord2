@@ -25,7 +25,13 @@ module.exports.run = async (client, message, args) => {
     });     
 
 
-    message.channel.send(`Uw suggestie is verzonden in het suggestie kannaal`)
+ var serverEmbed = new discord.MessageEmbed()
+    .setDescription("Uw bug is verstuurd in #bug")
+    .setColor("#0b03fc")
+    .setAuthor(`${message.author.tag}`)
+    .setTimestamp();
+
+return message.channel.send(serverEmbed);
 
 
 }

@@ -2,6 +2,8 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
+
+    
     const channel = message.guild.channels.cache.find(ch => ch.name === "suggestie");
     if(!channel) return message.reply("Kannaal niet gevonden.");
 
@@ -25,10 +27,20 @@ module.exports.run = async (client, message, args) => {
     });     
 
 
-    message.channel.send(`Uw suggestie is verzonden in het suggestie kannaal`)
+    
 
 
 }
+
+var serverEmbed = new discord.MessageEmbed()
+.setDescription("Uw suggestie is verstuurd in het #suggestie kanaal")
+.setColor("#0b03fc")
+.setAuthor(`${message.author.tag}`)
+.setTimestamp();
+
+return message.channel.send(serverEmbed);
+
+
 
 module.exports.help = {
     name: "suggestie",

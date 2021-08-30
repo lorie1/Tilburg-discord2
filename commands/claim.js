@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 
         var serverEmbed = new discord.MessageEmbed()
             .setTitle(`Ticket is geclaimd door: ${message.author.username}`)
-            .setDescription(`${message.author.username} Gaat u verder helpen`)
+            .setDescription(`${message.author.username} Gaat u verder helpen\n\nGelieven niet te taggen!`)
             .setColor("#0b03fc")
             .setTimestamp();
 
