@@ -9,8 +9,8 @@ module.exports.run = async (client, message, args) => {
     if(!channel) return message.reply("Gelieven een suggestie mee te geven!");
 
     var embed = new discord.MessageEmbed()
-        .setTitle(`Suggestie ${message.author.tag}`)
         .setDescription(argsBericht)
+        .setTitle(`Suggestie ${message.author.tag}`)
         .setColor("#ffcc00");
         
 
