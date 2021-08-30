@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) => {
 
     var embed = new discord.MessageEmbed()
         .setTitle("Goedendag " + message.author.username)
-        .setFooter("uw ticket wordt aangemaakt")
+        .setFooter("uw ticket wordt aangemaakt\n\n")
         .setColor("#0b03fc")
         .setTimestamp();
 
