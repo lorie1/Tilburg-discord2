@@ -2,11 +2,11 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    const channel = message.guild.channels.cache.find(ch => ch.name === "suggestie");
+    const channel = message.guild.channels.cache.find(ch => ch.name === "suggestie2");
     if(!channel) return message.replay("Kannaal niet gevonden.");
 
     var argsBericht = args.join(" ");
-    if(!argsBericht) return message.replay("Gelieven een suggestie mee te geven!");
+    if(!channel) return message.replay("Gelieven een suggestie mee te geven!");
 
     var embed = new discord.MessageEmbed()
         .setTitle(`Suggestie ${message.author.tag}`)
