@@ -20,8 +20,7 @@ module.exports.run = async (client, message, args) => {
        await msg.react("👍");
        await msg.react("👎");
        message.delete();
-    }).cache(err => {
-        console.log(err);
+        
     });     
 
 
