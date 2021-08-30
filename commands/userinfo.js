@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
     if(!message) member = message.member;
 
     var roles = member.roles.cache.size - 1;
-    var roleNames = member.roles.cache.map(r = r).join(" ").replace("@everyone", "");
+    var roleNames = member.roles.cache.map(r => r).join(" ").replace("@everyone", "");
     if(roles == 0) roleNames = "Geen rollen";
 
     var status = member.presence.status;
