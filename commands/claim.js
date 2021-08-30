@@ -8,11 +8,17 @@ module.exports.run = async (client, message, args) => {
 
     if (message.channel.parentID == categoryID) {
 
-        message.channel.send(`Ticket is geclaimd door: ${message.author.username}\n\nGoedendag, ik ben ${message.author.username} van het staff team. Waar kan ik u mee helpen?`);
+        var serverEmbed = new discord.MessageEmbed()
+            .setTitle(`Ticket is geclaimd door: ${message.author.username}`)
+            .setDescription(`${message.author.username} Gaat u verder helpen`)
+            .setColor("#0b03fc")
+            .setTimestamp();
+
+        return message.channel.send(serverEmbed);
 
     
 
-        ticketChannel.send(embedCreateTicket);
+       
 
     } else {
 
@@ -23,6 +29,7 @@ module.exports.run = async (client, message, args) => {
 
 
 }
+message.delete();
 
 module.exports.help = {
     name: "claim"

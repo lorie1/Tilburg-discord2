@@ -23,16 +23,17 @@ module.exports.run = async (client, message, args) => {
     if (!kickUser) return message.reply("Kan de gebruiker niet vinden.");
 
     var embed = new discord.MessageEmbed()
-        .setColor("#ff0000")
+        .setColor("#0b03fc")
         .setThumbnail(kickUser.user.displayAvatarURL)
         .setFooter(message.member.displayName, message.author.displayAvatarURL)
         .setTimestamp()
         .setDescription(`** Gekickt:** ${kickUser} (${kickUser.id})
             **Gekickt door:** ${message.author}
-            **Redenen: ** ${reason}`);
+            **Redenen: ** ${reason}`)
+        .setTimestamp();
 
     var embedPrompt = new discord.MessageEmbed()
-        .setColor("GREEN")
+        .setColor("#0b03fc")
         .setAuthor("Gelieve te reageren binnen 30 sec.")
         .setDescription(`Wil je ${kickUser} kicken?`);
 

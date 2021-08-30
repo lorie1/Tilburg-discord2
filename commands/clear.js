@@ -15,7 +15,7 @@ module.exports.run = async (client, message, args) => {
         message.channel.bulkDelete(amount).then(() => {
 
             if (args[0] <= 0) {
-                message.reply("Ben je loemp ik kan toch geen 0 berichten verwijderen").then(msg => msg.delete({ timeout: 3000 }));
+                message.reply("Ben je lomp ik kan toch geen 0 berichten verwijderen xD").then(msg => msg.delete({ timeout: 3000 }));
             } else if (args[0] == 1) {
                 message.reply("Ik heb 1 bericht verwijderd").then(msg => msg.delete({ timeout: 3000 }));
             } else {

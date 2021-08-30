@@ -25,7 +25,9 @@ module.exports.run = async (client, message, args) => {
 
     var embed = new discord.MessageEmbed()
         .setTitle("Goedendag " + message.author.username)
-        .setFooter("uw ticket wordt aangemaakt");
+        .setFooter("uw ticket wordt aangemaakt")
+        .setColor("#0b03fc")
+        .setTimestamp();
 
     message.channel.send(embed);
 
@@ -64,8 +66,12 @@ module.exports.run = async (client, message, args) => {
                     var embedParent = new discord.MessageEmbed()
                         .setTitle(`Goedendag ${message.author.username}`)
                         .setDescription("Zet hier uw vraag/klacht.\n\n Het staff team zal u komen helpen, wij vragen u niet te taggen!")
-                        .setFooter("Ticket");
-                    settedParent.send(embedParent);
+                        .setFooter("Ticket")
+                        .setColor("#0b03fc")
+                        .setTimestamp();
+                        
+                    
+                        settedParent.send(embedParent);
 
            
 
