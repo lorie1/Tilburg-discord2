@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
 
     if (message.channel.parentID == categoryID) {
 
-        message.channel.send(`Ticket is geclaimd door: ${message.author.username}`);
+        message.channel.send(`Ticket is geclaimd door: ${message.author.username}\n\nGoedendag, ik ben ${message.author.username} van het staff team. Waar kan ik u mee helpen?`);
 
     
 
