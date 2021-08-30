@@ -30,15 +30,17 @@ module.exports.run = async (client, message, args) => {
     
 
 
-}
-
-var serverEmbed = new discord.MessageEmbed()
+    var serverEmbed = new discord.MessageEmbed()
 .setDescription("Uw suggestie is verstuurd in het #suggestie kanaal")
 .setColor("#0b03fc")
-.setAuthor(`${author.tag}`)
+.setAuthor(`${message.author.username}`)
 .setTimestamp();
 
 return message.channel.send(serverEmbed);
+
+
+}
+
 
 
 
