@@ -7,7 +7,8 @@ module.exports.run = async (client, message, args) => {
             .setColor("#kleur")
             .addField("Bot naam", client.user.username)
             .addField("Je bent deze server gejoind op", message.member.joinedAt)
-            .addField("Totaal memebers", message.guild.memberCount);
+            .addField("Totaal memebers", message.guild.memberCount)
+            .setTimestamp()
 
         return message.channel.send(serverEmbed);
 

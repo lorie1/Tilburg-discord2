@@ -2,23 +2,24 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
 
-    const channel = message.guild.channels.cache.find(ch => ch.name === "suggestie");
+    const channel = message.guild.channels.cache.find(ch => ch.name === "bug");
     if(!channel) return message.reply("Kannaal niet gevonden.");
 
     var argsBericht = args.join(" ");
-    if(!argsBericht) return message.reply("Gelieven een suggestie mee te geven!");
+    if(!argsBericht) return message.reply("Gelieven een bug mee te geven!");
 
     var embed = new discord.MessageEmbed()
         .setDescription(argsBericht)
         .setColor("#ffcc00")
-        .setAuthor(`${message.author.tag}`);
+        .setAuthor(`${message.author.tag}`)
+        .setFooter(``)
         
 
 
     channel.send(embed).then(async (msg) => {
 
-       await msg.react("👍");
-       await msg.react("👎");
+       await msg.react("✔");
+       await msg.react("❌");
        message.delete();
         
     });     
@@ -30,7 +31,7 @@ module.exports.run = async (client, message, args) => {
 }
 
 module.exports.help = {
-    name: "suggestie",
+    name: "bug",
     description: "Geeft al de verschillende commands",
     category: "Informatie"
 }
