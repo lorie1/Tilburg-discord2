@@ -10,8 +10,8 @@ module.exports.run = async (client, message, args) => {
     .addField("ID", `${member.id}`, true)
     .addField("Bijnaam:", nickName, true)
     .addField("Status:", `${status}`, true)
-    .addField("Server gejoind", `${moment(member.joinedAt).format("LL")}`)
-    .addField(`Rollen [${roles}]`, `${roleNames}`);
+    .addField("Server gejoind", `${moment(member.joinedAt).format("LL")}`);
+
 
 message.channel.send(embed);
 
