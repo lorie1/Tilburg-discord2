@@ -48,7 +48,7 @@ bot.on("guildMemberAdd", member => {
 
     
     var serverEmbed = new discord.MessageEmbed()
-    .setDescription(`${member} is in de server geschoven\n\n\nWelkom in tilburg, doe even !help in <868160712793522179>`)
+    .setDescription(`${member} is in de server geschoven\n\n\nWelkom in tilburg, doe even !help in bot commands`)
     .setColor("#0b03fc")
     .setTimestamp();
 
