@@ -47,7 +47,12 @@ bot.on("guildMemberAdd", member => {
     if(!channel) return;
 
     
-    channel.send(`Welkom in de server ${member} kijk even regels en doe even !help in bot-commands!`);
+    var serverEmbed = new discord.MessageEmbed()
+    .setDescription(`${member} is in de server geschoven\n\n\nWelkom in tilburg, doe even !help in <868160712793522179>`)
+    .setColor("#0b03fc")
+    .setTimestamp();
+
+return message.channel.send(serverEmbed);
 
 
 
