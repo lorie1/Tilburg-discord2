@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
             .setDescription("Hoi wij zijn Tilburg stad V1")
             .setColor("#kleur")
             .addField("Bot naam", client.user.username)
-            .addField("Je bent deze server gejoind op", message.member.joinedAt)
+            .addField("Je bent de server gejoint", `${moment(member.joinedAt).format("LL")}`)
             .addField("Totaal memebers", message.guild.memberCount);
 
         return message.channel.send(serverEmbed);
