@@ -3,7 +3,7 @@ const discord = require("discord.js");
 module.exports.run = async (client, message, args) => {
 
     const channel = message.guild.channels.cache.find(ch => ch.name === "suggestie2");
-    if(!channel) return message.replay("Kannaal niet gevonden.");
+    if(!channel) return message.reply("Kannaal niet gevonden.");
 
     var argsBericht = args.join(" ");
     if(!channel) return message.reply("Gelieven een suggestie mee te geven!");
