@@ -31,8 +31,3 @@ module.exports.help = {
     name: "commands-staff" 
     
 }
-
-module.exports.help = {
-    name: "Commands-staff" 
-    
-}
