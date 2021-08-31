@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
 
     if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Jij kan dit niet doen");
 
-    if (message.channel.parentID == categoryID) {
+   
 
         var serverEmbed = new discord.MessageEmbed()
             .setTitle(`Commands voor staff:`)
@@ -20,11 +20,11 @@ module.exports.run = async (client, message, args) => {
 
        
 
-    } 
+    }
 
 
 
-}
+
 
 
 module.exports.help = {
