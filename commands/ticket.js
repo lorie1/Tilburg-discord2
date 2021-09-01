@@ -27,7 +27,6 @@ module.exports.run = async (client, message, args) => {
         .setTitle("Goedendag " + message.author.username)
         .setFooter("uw ticket wordt aangemaakt\n\n")
         .setColor("#0b03fc")
-        .setFooter("Bot naam", client.user.username)
         .setTimestamp();
 
     message.channel.send(embed);
@@ -69,7 +68,6 @@ module.exports.run = async (client, message, args) => {
                         .setDescription("Zet hier uw vraag/klacht.\n\n Het staff team zal u komen helpen, wij vragen u niet te taggen!")
                         .setFooter("Ticket")
                         .setColor("#0b03fc")
-                        .setFooter("Bot naam", client.user.username)
                         .setTimestamp();
                         
                     

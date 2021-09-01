@@ -50,7 +50,6 @@ bot.on("guildMemberAdd", member => {
     var serverEmbed = new discord.MessageEmbed()
     .setDescription(`${member} is in de server geschoven\n\n\nWelkom in tilburg, doe even !help in bot commands <#868160712793522179>`)
     .setColor("#0b03fc")
-    .setFooter("Bot naam", client.user.username)
     .setTimestamp();
 
 return channel.send(serverEmbed);

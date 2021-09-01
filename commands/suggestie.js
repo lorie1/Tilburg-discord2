@@ -14,7 +14,6 @@ module.exports.run = async (client, message, args) => {
         .setDescription(argsBericht)
         .setColor("#0b03fc")
         .setAuthor(`${message.author.tag}`)
-        .setFooter("Bot naam", client.user.username)
         .setTimestamp();
         
 
