@@ -12,6 +12,7 @@ module.exports.run = async (client, message, args) => {
             .setTitle(`Afronding ${message.channel.name}`)
             .setDescription(`Kunnen wij ${message.channel.name} sluiten of heeft u nog vragen/klachten?`)
             .setColor("#0b03fc")
+            .setFooter("Bot naam", client.user.username)
             .setTimestamp();
 
         return message.channel.send(serverEmbed);

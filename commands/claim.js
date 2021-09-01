@@ -12,6 +12,7 @@ module.exports.run = async (client, message, args) => {
             .setTitle(`Ticket is geclaimd door: ${message.author.username}`)
             .setDescription(`${message.author.username} Gaat u verder helpen\n\nGelieven niet te taggen!`)
             .setColor("#0b03fc")
+            .setFooter("Bot naam", client.user.username)
             .setTimestamp();
 
         return message.channel.send(serverEmbed);

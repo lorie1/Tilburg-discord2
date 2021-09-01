@@ -30,13 +30,15 @@ module.exports.run = async (client, message, args) => {
         .setDescription(`** Gekickt:** ${kickUser} (${kickUser.id})
             **Gekickt door:** ${message.author}
             **Redenen: ** ${reason}`)
+        .setFooter("Bot naam", client.user.username)
         .setTimestamp();
 
     var embedPrompt = new discord.MessageEmbed()
         .setColor("#0b03fc")
         .setAuthor("Gelieve te reageren binnen 30 sec.")
-        .setDescription(`Wil je ${kickUser} kicken?`);
-
+        .setDescription(`Wil je ${kickUser} kicken?`)
+        .setFooter("Bot naam", client.user.username)
+        .setTimestamp();
 
     message.channel.send(embedPrompt).then(async msg => {
 

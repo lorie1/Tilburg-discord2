@@ -16,6 +16,7 @@ module.exports.run = async (client, message, args) => {
             .setDescription("ticket is gemarkeerd als **compleet**.")
             .setFooter("Ticket gesloten")
             .setColor("#0b03fc")
+            .setFooter("Bot naam", client.user.username)
             .setTimestamp();
 
         // Channel voor logging
