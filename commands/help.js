@@ -9,7 +9,7 @@ module.exports.run = async (client, message, args) => {
             .addField("Bot naam", client.user.username)
             .setTimestamp();
 
-            message.channel.send("Alle infotmatie staat in je privé berichten! :mailbox_with_mail:") 
+            message.channel.send("Alle commands staat in je privé berichten! :mailbox_with_mail:") 
             return message.author.send(botEmbed);
 }      
 
@@ -20,5 +20,5 @@ module.exports.run = async (client, message, args) => {
 
 
 module.exports.help = {
-    name: "info"
+    name: "help"
 }
