@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     var serverEmbed = new discord.MessageEmbed()
             .setTitle("Sollicitaties")
-            .setDescription("Politie: open\n\nBrandweer: open\n\nAmbulance: open\n\nnormaal staff: open\n\nDeveloper: gesloten\n\n\n**_alleen developer is gesloten_**")
+            .setDescription("Politie: Gesloten\n\nBrandweer: Gesloten\n\nAmbulance: open\n\nnormaal staff: Gesloten\n\nDeveloper: gesloten\n\n\n**_alleen developer is gesloten_**")
             .setColor("#0b03fc")
             .setTimestamp();
 
