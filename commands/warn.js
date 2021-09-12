@@ -64,7 +64,7 @@ module.exports.run = async (client, message, args) => {
 
         var embed = new discord.MessageEmbed()
             .setColor("0b03fc")
-            .setDescription("PAS OP")
+            .setDescription(`PAS OP ${warnUser}`)
             .addField("Bericht", "Je hebt nog een waarschuwing voor een ban.")
             .setTimestamp();
 
