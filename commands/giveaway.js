@@ -80,7 +80,7 @@ module.exports.run = async (client, message, args) => {
 
         for (let y = 0; y < winners.length; y++) {
 
-            message.channel.send("Proficiat: " + winners[y].username + `Je hebt gewonnen ${item}`);
+            message.channel.send("Gefelicieteerd: " + winners[y].username + `Je hebt gewonnen ${item}`);
 
         }
 
