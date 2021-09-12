@@ -65,15 +65,12 @@ module.exports.run = async (client, message, args) => {
         var embed = new discord.MessageEmbed()
             .setColor("0b03fc")
             .setDescription(`PAS OP ${warnUser}`)
-            .addField("Bericht", "Je hebt nog een waarschuwing voor een ban.")
+            .addField("Bericht", "Als u niet gaat veranderen worden er meer maatregelen getroffen!")
             .setTimestamp();
 
         message.channel.send(embed);
 
-    } else if (warns[warnUser.id].warns == 4) {
-        message.guild.member(warnUser).ban(reason);
-        message.channel.send(`${warnUser} is verbannen door de bot wegens te veel warns`)
-        .setTimestamp();
+
     }
 }
 
