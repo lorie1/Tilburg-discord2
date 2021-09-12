@@ -44,7 +44,17 @@ module.exports.run = async (client, message, args) => {
 
     var channel = message.member.guild.channels.cache.get("886348504711168060");
 
-    message.channel.send(`${warnUser} Heeft een warn gekregen\n\nreden: ${reason}`)
+    var embed = new discord.MessageEmbed()
+        .setColor("#0b03fc")
+        .setFooter(message.member.displayName, message.author.displayAvatarURL)
+        .setTimestamp()
+        .setDescription(`**Gewarnd:** ${warnUser} 
+        **Gewarnd door:** ${message.author}
+        **Redenen: ** ${reason}`)
+        .addField("Aantal warns", warns[warnUser.id].warns)
+        .setTimestamp();
+
+ 
 
     if (!channel) return;
 
