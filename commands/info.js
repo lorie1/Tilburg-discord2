@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     var botEmbed = new discord.MessageEmbed()
             .setTitle('Informatie')
-            .setDescription(`Tilburg stad V1 is een RP server momenteel is de game nog niet uit, wij zijn er wel druk mee bezig.\n\nHet is nog niet bekend wanneer de game uit zal komen!`)
+            .setDescription(`Tilburg stad V1 is een RP server de game is al uit. Doe !game in <#868160712793522179>.\n\nLet wel op de game is nog in beta!`)
             .setColor("#0b03fc")
             .setTimestamp();
 
