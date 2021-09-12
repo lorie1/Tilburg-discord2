@@ -44,6 +44,8 @@ module.exports.run = async (client, message, args) => {
 
     var channel = message.member.guild.channels.cache.get("886348504711168060");
 
+    message.channel.send(`${warnUser} Heeft een warn gekregen\n\nreden: ${reason}`)
+
     if (!channel) return;
 
     channel.send(embed);
