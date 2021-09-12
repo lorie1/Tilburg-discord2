@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
 
     if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) return message.reply("Geen perms");
 
-    var warnUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    var warnUser = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
 
     var reason = args.slice(1).join(" ");
 
