@@ -48,13 +48,13 @@ module.exports.run = async (client, message, args) => {
         .setColor("#0b03fc")
         .setFooter(message.member.displayName, message.author.displayAvatarURL)
         .setTimestamp()
-        .setDescription(`**Gewarnd:** ${warnUser} 
+        .setDescription(`**Gewarnd:** ${warnUser} (${warnUser.id})
         **Gewarnd door:** ${message.author}
         **Redenen: ** ${reason}`)
         .addField("Aantal warns", warns[warnUser.id].warns)
         .setTimestamp();
 
- 
+    message.channel.send(embed);
 
     if (!channel) return;
 
