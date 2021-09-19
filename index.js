@@ -46,13 +46,21 @@ bot.on("guildMemberAdd", member => {
 
     if(!channel) return;
 
-    
-    var serverEmbed = new discord.MessageEmbed()
-    .setDescription(`${member} is in de server geschoven\n\n\nWelkom in tilburg, doe even !help in bot commands <#868160712793522179>`)
+
+var DMembed = new discord.MessageEmbed()
+    .setDescription(`${member} Hallo, leuk dat je in de server bent gekomen!\n\nAls je de game wild bekijken dan kunt u dat doen via deze link: https://www.roblox.com/games/6763236398/Gemeenten-Tilburg-V1-BETA\n\nMocht u willen weten wat alle commands zijn kunt u dat doen via !help.\n\nDe game creator is Lorenzo, de Co-Creator is jesse.`)
     .setColor("#0b03fc")
     .setTimestamp();
 
-return channel.send(serverEmbed);
+return guildMemberAdd.send(DMembed);
+
+
+
+
+
+
+
+
 
 
 
@@ -74,9 +82,9 @@ return channel.send(serverEmbed);
 
 bot.on("ready", async () => {
 
-    console.log(`${bot.user.username} is online.`);
+    console.log(`${bot.user.username} doet het!.`);
 
-    bot.user.setActivity(`Lorie#1093`, { type: `LISTENING` });
+    bot.user.setActivity(`Bot maker: Lorie#1093`, { type: `LISTENING` });
 
 });
 
