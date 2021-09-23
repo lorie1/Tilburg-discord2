@@ -26,7 +26,7 @@ fs.readdir("./commands/", (err, files) => {
 
         bot.commands.set(fileGet.help.name, fileGet);
 
-
+ 
 
 
     })
