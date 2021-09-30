@@ -49,7 +49,8 @@ bot.on("guildMemberAdd", member => {
 
 
 var welkom = new discord.MessageEmbed()
-    .setDescription(`${member} Hallo, leuk dat je in de server bent gekomen!\n\nAls je de game wild bekijken dan kunt u dat doen via deze link: https://www.roblox.com/games/6763236398/Gemeenten-Tilburg-V1-BETA\n\nMocht u willen weten wat alle commands zijn kunt u dat doen via !help.\n\nDe game creator is Lorenzo, de Co-Creator is jesse.`)
+    .setTitle(`${member} **IS IN DE SERVER GESCHOVEN**`)
+    .setDescription(`${member} Hey, leuk dat je in de server bent gekomen!\n\nAls je de game wild bekijken dan kunt u dat doen via deze link: https://www.roblox.com/games/6763236398/Gemeenten-Tilburg-V1-BETA\n\nMocht u willen weten wat alle commands zijn kunt u dat doen via !help.\n\nDe game creator is Lorenzo, de Co-Creator is Jair.`)
     .setColor("#0b03fc")
     .setTimestamp();
 
