@@ -14,7 +14,7 @@ module.exports.run = async (client, message, args) => {
         if (channel.name == userName.toLowerCase() + "-" + userDiscriminator) {
             ticketBestaat = true;
 
-            message.reply("Je hebt al een ticket aangemaakt");
+            message.reply("u heeft al een ticket aangemaakt");
 
             return;
         }
@@ -69,9 +69,22 @@ module.exports.run = async (client, message, args) => {
                         .setFooter("Ticket")
                         .setColor("#0b03fc")
                         .setTimestamp();
+                    
                         
                     
                         settedParent.send(embedParent);
+
+                    var embedParent = new discord.MessageEmbed()
+                        .setTitle(`**Hier een lijst met veel gestelde vragen:**`)
+                        .setDescription("nIk wil graag een dev sollie doen, kan dat?\nJa, momenteel zijn deze open! Stuur maar 5 foto's van u bouw werken!\n\nIk zou graag partners willen worden, kan dat?\nJa zeker kan dit. Wij doet dit vanaf 25 leden! Zit u hier onder? Dan moet u een everyone tag doen, zit u onder de 10 leden? Dan kunt u heelaas geen partners worden!\n\nKan ik een wil een sollicitatie doen voor staff, kan dat?\nDat kunt u zien doormiddel van !sollie!\n\nMocht u verdere vragen hebben kunt u ze hier stellen!")
+                        .setFooter("Ticket")
+                        .setColor("#0b03fc")
+                        .setTimestamp();
+                    
+                        
+                    
+                    settedParent.send(embedParent);
+
 
            
 
